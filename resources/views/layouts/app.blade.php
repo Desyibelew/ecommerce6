@@ -33,6 +33,33 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+
+<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">{{ __('product') }}</a>
+
+<ul class="dropdown-menu">
+ <li>
+<a class="dropdown-item" href="{{ route('product/register') }}">{{ __('New product') }} </a>
+<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">{{ __('Category') }}</a>
+
+<ul class="dropdown-menu">
+ <li>
+<a class="dropdown-item" href="{{ route('Category/register') }}">{{ __('New Category') }} </a>
+
+</li>
+</ul> 
+
+                    </ul>
+                    <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+
+<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">{{ __('Category') }}</a>
+
+<ul class="dropdown-menu">
+ <li>
+<a class="dropdown-item" href="{{ route('Category/register') }}">{{ __('New Category') }} </a>
+</li>
+</ul> 
 
                     </ul>
 
