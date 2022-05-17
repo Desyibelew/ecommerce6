@@ -35,3 +35,13 @@ Route::get('/product/edit/{id}', [ProductController::class, 'edit']);
 Route::post('/product/update',[ProductController::class,'update'])->name('product/update');
 Route::get('/product/delete/{id}', [ProductController::class, 'delete']);
 Route::get('/product/get_by_id/{id}', [ProductController::class, 'get_by_id']);
+
+
+//Route::get('/home', [App\Http\Controllers\HomeController ::class, 'index'])->name('home');
+Route::get('/Customer/registor_for_license',[CustomerController::class,'registor_for_license'])->name('product/registor_for_license');
+Route::post('Customer.registor_for_license',[CustomerController::class,'store']);
+Route::get('/Customer/get_license', [CustomerController::class, 'get_all'])->name('product/get_license');
+//Route::get('/Customer/edit/{id}', [CustomerController::class, 'edit']);
+Route::post('/Customer/update_customer_license',[CustomerController::class,'update_customer_license'])->name('product/update_customer_license');
+Route::get('/Customer/cancel_customer_license/{id}', [CustomerController::class, 'cancel_customer_license']);
+Route::get('/Customer/get_by_id/{id}', [CustomerController::class, 'get_by_id']);

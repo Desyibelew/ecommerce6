@@ -6,7 +6,7 @@
  <div class="card">
  <div class="card-header">{{ __('PRODUCT EDIT') }}</div>
  <div class="card-body">
- <form method="POST" action="{{ route('product/update') }}">
+ <form method="POST" action="{{ route('product/update_customer_license') }}">
  @csrf
 <input type="hidden" value="{{ $product->id }}" name ='id'>
  <div class="form-group row">

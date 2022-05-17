@@ -37,7 +37,7 @@
  <td> {{ $product->price }}</td>
  <td> {{ $product->quantity }}</td>
  <td>
- <a class="btn btn-xs btn-info" title="Detail" href="/product/search/{{ $product->id }}">Details</a>
+ <a class="btn btn-xs btn-info" title="Detail" href="/product/get_by_id/{{ $product->id }}">Details</a>
  <a class="btn btn-xs btn-success" title="Edit" href="/product/edit/{{$product->id }}">Edit</a>
  <a class="btn btn-xs btn-danger" title="Delete" href="/product/delete/{{ $product->id }}">Delete</a>
  </td>

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    //
+    
     public function register()
   {
   return view('product.register');
