@@ -39,12 +39,11 @@ class CustomerController extends Controller
  $Customer = Customer::all();
  return view('Customer.get_license', compact('Customer'));
 }
-public function edit($id)
+public function update_license($id)
  {
  $Customer = Customer::find($id);
- return view('Customer.edit', compact('Customer'));
+ return view('Customer.update_license', compact('Customer'));
  }
-
 
  public function update_customer_license(Request $request)
  {
@@ -63,7 +62,6 @@ public function edit($id)
   $Customer->save();
   return redirect('Customer/get_license');
   }
-
 
   public function cancel_customer_license($id)
 

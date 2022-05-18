@@ -64,7 +64,7 @@ Sex
  <td> {{ $Customer->kebele }}</td>
  <td>
  <a class="btn btn-xs btn-info" title="Detail" href="/Customer/get_by_id/{{ $Customer->id }}">               Details</a>
- <a class="btn btn-xs btn-success" title="Edit" href="/Customer/update_customer_license/{{$Customer->id }}"> Edit</a>
+ <a class="btn btn-xs btn-success" title="Edit" href="/Customer/update_license/{{$Customer->id }}"> Update</a>
  <a class="btn btn-xs btn-danger" title="Delete" href="/Customer/cancel_customer_license/{{ $Customer->id }}">Delete</a>
  </td>
  </tr>
