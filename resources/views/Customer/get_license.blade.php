@@ -19,7 +19,7 @@
  ID
  </th>
 <th>
-Applicant_full_name
+Full_name
  </th>
 <th>
 Sex
@@ -53,7 +53,7 @@ Sex
  @foreach($Customer as $Customer)
  <tr>
  <td> {{ $Customer->id }}</td>
- <td> {{ $Customer->applicant_full_name }}</td>
+ <td> {{ $Customer->Full_name }}</td>
  <td> {{ $Customer->Sex }}</td>
  <td> {{ $Customer->age }}</td>
  <td> {{ $Customer->nationality }}</td>
@@ -64,7 +64,11 @@ Sex
  <td> {{ $Customer->kebele }}</td>
  <td>
  <a class="btn btn-xs btn-info" title="Detail" href="/Customer/get_by_id/{{ $Customer->id }}">               Details</a>
+ </td>
+ <td>
  <a class="btn btn-xs btn-success" title="Edit" href="/Customer/update_license/{{$Customer->id }}"> Update</a>
+</td>
+<td>
  <a class="btn btn-xs btn-danger" title="Delete" href="/Customer/cancel_customer_license/{{ $Customer->id }}">Delete</a>
  </td>
  </tr>

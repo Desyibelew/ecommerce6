@@ -9,7 +9,7 @@ class Customer extends Model
 {
     use HasFactory;
     protected $fillable=[
-     'applicant_full_name',
+     'Full_name',
      'Sex',
      'age',
      'nationality',

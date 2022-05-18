@@ -10,11 +10,11 @@
 >
  @csrf
  <div class="form-group row">
- <label for="applicant_full_name" class="col-md-4 col-formlabel text-md-right">{{ __('Applicant_full_name') }}</label>
+ <label for="Full_name" class="col-md-4 col-formlabel text-md-right">{{ __('Full_name') }}</label>
  <div class="col-md-6">
- <input id="applicant_full_name" type="text" class="formcontrol @error('applicant_full_name') isinvalid @enderror" name="applicant_full_name" value="{{ old('applicant_full_name') }}" required autocomplete="
-applicant_full_name" autofocus>
- @error('applicant_full_name')
+ <input id="Full_name" type="text" class="formcontrol @error('Full_name') isinvalid @enderror" name="Full_name" value="{{ old('Full_name') }}" required autocomplete="
+Full_name" autofocus>
+ @error('Full_name')
  <span class="invalid-feedback" role="alert">
  <strong>{{ $message }}</strong>
  </span>

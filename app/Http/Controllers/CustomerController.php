@@ -16,7 +16,7 @@ class CustomerController extends Controller
     
     {
       $Customer =new Customer();
-      $Customer -> applicant_full_name = $request->applicant_full_name;
+      $Customer -> Full_name = $request->Full_name;
       $Customer->Sex = $request->Sex;
       $Customer->age =$request->age;
       $Customer->nationality =$request->nationality;
@@ -48,9 +48,9 @@ public function update_license($id)
  public function update_customer_license(Request $request)
  {
  //Validate
- $request->validate(['applicant_full_name' => 'required' ]);
+ $request->validate(['Full_name' => 'required' ]);
   $Customer = Customer::find($request->id);
-  $Customer->applicant_full_name =$request->applicant_full_name;
+  $Customer->Full_name =$request->Full_name;
   $Customer->sex =$request->sex;
   $Customer->age =$request->age;
   $Customer->nationality =$request->nationality;

@@ -10,7 +10,7 @@
  <div class="card-body">
  ID : {{ $Customer->id }}
  <br>
- Customer : {{ $Customer->applicant_full_name }}
+ Customer : {{ $Customer->Full_name }}
  <br>
  Sex : {{ $Customer->Sex }}
  <br>

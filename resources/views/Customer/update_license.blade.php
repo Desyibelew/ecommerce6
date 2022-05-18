@@ -10,17 +10,16 @@
  @csrf
 <input type="hidden" value="{{ $Customer->id }}" name ='id'>
  <div class="form-group row">
- <label for="apolicant_full_name" class="col-md-4 col-form-label text-md-right">{{ __('Apolicant_full_name') }}</label>
+ <label for="Full_name" class="col-md-4 col-form-label text-md-right">{{ __('Full_name') }}</label>
  <div class="col-md-6">
- <input id="apolicant_full_name" type="text" class="form-control @error('apolicant_full_name') is-invalid @enderror" name="apolicant_full_name" value="{{ $Customer->apolicant_full_name}}" required autocomplete="apolicant_full_name" autofocus>
- @error('apolicant_full_name')
+ <input id="Full_name" type="text" class="form-control @error('Full_name') is-invalid @enderror" name="Full_name" value="{{ $Customer->Full_name}}" required autocomplete="Full_name" autofocus>
+ @error('Full_name')
  <span class="invalid-feedback" role="alert">
  <strong>{{ $message }}</strong>
  </span>
  @enderror
  </div>
  </div>
-
  <div class="form-group row">
  <label for="Sex" class="col-md-4 col-form-label text-md-right">{{ __('Sex') }}</label>
  <div class="col-md-6">
