@@ -20,7 +20,5 @@ class Customer extends Model
      'kebele',
      
     ];
-public function Categories(){
-    return $this ->belongsTo(Category::class);
-    }
+
 }
