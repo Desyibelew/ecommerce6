@@ -4,13 +4,13 @@
  <div class="row justify-content-center">
  <div class="col-md-8">
  <div class="card">
- <div class="card-header">{{ __('Customer Update') }}</div>
+ <div class="card-header">{{ __('Customer License Update') }}</div>
  <div class="card-body">
  <form method="POST" action="{{ route('Customer/update_customer_license') }}">
  @csrf
 <input type="hidden" value="{{ $Customer->id }}" name ='id'>
  <div class="form-group row">
- <label for="apolicant_full_name" class="col-md-4 col-form-label text-md-right">{{ __('Customer') }}</label>
+ <label for="apolicant_full_name" class="col-md-4 col-form-label text-md-right">{{ __('Apolicant_full_name') }}</label>
  <div class="col-md-6">
  <input id="apolicant_full_name" type="text" class="form-control @error('apolicant_full_name') is-invalid @enderror" name="apolicant_full_name" value="{{ $Customer->apolicant_full_name}}" required autocomplete="apolicant_full_name" autofocus>
  @error('apolicant_full_name')
@@ -20,6 +20,7 @@
  @enderror
  </div>
  </div>
+
  <div class="form-group row">
  <label for="Sex" class="col-md-4 col-form-label text-md-right">{{ __('Sex') }}</label>
  <div class="col-md-6">
@@ -51,6 +52,8 @@
  <strong>{{ $message }}</strong>
  </span>
  @enderror
+ </div>
+ </div>
  <div class="form-group row">
  <label for="kebele_ID" class="col-md-4 col-form-label text-md-right">{{ __('kebele_ID') }}</label>
  <div class="col-md-6">
@@ -60,6 +63,8 @@
  <strong>{{ $message }}</strong>
  </span>
  @enderror
+ </div>
+ </div>
  <div class="form-group row">
  <label for="region" class="col-md-4 col-form-label text-md-right">{{ __('region') }}</label>
  <div class="col-md-6">
@@ -69,6 +74,8 @@
  <strong>{{ $message }}</strong>
  </span>
  @enderror
+ </div>
+ </div>
  <div class="form-group row">
  <label for="zone" class="col-md-4 col-form-label text-md-right">{{ __('zone') }}</label>
  <div class="col-md-6">
@@ -78,6 +85,8 @@
  <strong>{{ $message }}</strong>
  </span>
  @enderror
+ </div>
+ </div>
  <div class="form-group row">
  <label for="woreda" class="col-md-4 col-form-label text-md-right">{{ __('woreda') }}</label>
  <div class="col-md-6">
@@ -87,6 +96,8 @@
  <strong>{{ $message }}</strong>
  </span>
  @enderror
+ </div>
+ </div>
  <div class="form-group row">
  <label for="kebele" class="col-md-4 col-form-label text-md-right">{{ __('kebele') }}</label>
  <div class="col-md-6">
