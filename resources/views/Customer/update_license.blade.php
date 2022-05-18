@@ -87,10 +87,10 @@
  </div>
  </div>
  <div class="form-group row">
- <label for="woreda" class="col-md-4 col-form-label text-md-right">{{ __('woreda') }}</label>
+ <label for="trade_type" class="col-md-4 col-form-label text-md-right">{{ __('trade_type') }}</label>
  <div class="col-md-6">
- <input id="woreda" type="text" class="form-control @error('woreda') is-invalid @enderror" name="woreda" value="{{ $Customer->woreda }}" autocomplete="woreda">
- @error('woreda')
+ <input id="trade_type" type="text" class="form-control @error('trade_type') is-invalid @enderror" name="trade_type" value="{{ $Customer->trade_type }}" autocomplete="trade_type">
+ @error('trade_type')
  <span class="invalid-feedback" role="alert">
  <strong>{{ $message }}</strong>
  </span>
@@ -102,6 +102,39 @@
  <div class="col-md-6">
  <input id="kebele" type="text" class="form-control @error('kebele') is-invalid @enderror" name="kebele" value="{{ $Customer->kebele }}" autocomplete="kebele">
  @error('kebele')
+ <span class="invalid-feedback" role="alert">
+ <strong>{{ $message }}</strong>
+ </span>
+ @enderror
+ </div>
+ </div>
+ <div class="form-group row">
+ <label for="trade_type" class="col-md-4 col-form-label text-md-right">{{ __('trade_type') }}</label>
+ <div class="col-md-6">
+ <input id="trade_type" type="text" class="form-control @error('trade_type') is-invalid @enderror" name="trade_type" value="{{ $Customer->trade_type }}" autocomplete="trade_type">
+ @error('trade_type')
+ <span class="invalid-feedback" role="alert">
+ <strong>{{ $message }}</strong>
+ </span>
+ @enderror
+ </div>
+ </div>
+ <div class="form-group row">
+ <label for="trade_name" class="col-md-4 col-form-label text-md-right">{{ __('trade_name') }}</label>
+ <div class="col-md-6">
+ <input id="trade_name" type="text" class="form-control @error('trade_name') is-invalid @enderror" name="trade_name" value="{{ $Customer->trade_name }}" autocomplete="trade_name">
+ @error('trade_name')
+ <span class="invalid-feedback" role="alert">
+ <strong>{{ $message }}</strong>
+ </span>
+ @enderror
+ </div>
+ </div>
+ <div class="form-group row">
+ <label for="trade_code" class="col-md-4 col-form-label text-md-right">{{ __('trade_code') }}</label>
+ <div class="col-md-6">
+ <input id="trade_code" type="text" class="form-control @error('trade_code') is-invalid @enderror" name="trade_code" value="{{ $Customer->trade_code }}" autocomplete="trade_code">
+ @error('trade_code')
  <span class="invalid-feedback" role="alert">
  <strong>{{ $message }}</strong>
  </span>

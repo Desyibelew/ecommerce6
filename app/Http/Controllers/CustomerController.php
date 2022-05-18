@@ -25,6 +25,9 @@ class CustomerController extends Controller
       $Customer->zone =$request->zone;
       $Customer->woreda =$request->woreda;
       $Customer->kebele =$request->kebele;
+      $Customer->trade_type =$request->trade_type;
+      $Customer->trade_name =$request->trade_name;
+      $Customer->trade_code =$request->trade_code;
      $is_saved = $Customer->save();
     if($is_saved){
     echo " DESYIBELEW YOUR DATA IS SAVED SUCCESSFULLY.";

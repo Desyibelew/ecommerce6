@@ -47,6 +47,15 @@ Sex
  <th>
      Kebele
  </th>
+ <th>
+ Trade_type
+ </th>
+ <th>
+ Trade_name
+ </th>
+ <th>
+ Trade_code
+ </th>
  </tr>
  </thead>
  <tbody>
@@ -62,6 +71,9 @@ Sex
  <td> {{ $Customer->zone }}</td>
  <td> {{ $Customer->woreda }}</td>
  <td> {{ $Customer->kebele }}</td>
+ <td> {{ $Customer->trade_type }}</td>
+ <td> {{ $Customer->trade_name }}</td>
+ <td> {{ $Customer->trade_code }}</td>
  <td>
  <a class="btn btn-xs btn-info" title="Detail" href="/Customer/get_by_id/{{ $Customer->id }}">               Details</a>
  </td>

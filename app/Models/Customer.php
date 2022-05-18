@@ -18,6 +18,9 @@ class Customer extends Model
      'zone',
      'woreda',
      'kebele',
+     "trade_type",
+     "trade_name",
+     "trade_code",
      
     ];
 

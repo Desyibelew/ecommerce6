@@ -28,6 +28,12 @@
  <br>
  Kebele : {{ $Customer->kebele }}
  <br>
+ trade_type : {{ $Customer->trade_type }}
+ <br>
+ trade_name : {{ $Customer->trade_name }}
+ <br>
+ trade_code : {{ $Customer->trade_code }}
+ <br>
  </div>
  </div>
  </div>
