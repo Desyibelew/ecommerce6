@@ -68,7 +68,7 @@ public function edit($id)
   public function cancel_customer_license($id)
 
  {
- Customer::where('id', $id)->cancel_customer_license();
+ Customer::where('id', $id)->delete();
  return redirect('Customer/get_license');
  }
 
