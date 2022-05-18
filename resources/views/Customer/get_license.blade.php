@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="container pb-2">
- <a class="btn btn-success" href="{{ route('Customer/register') }}" role="button"> {{ __('New Customer') }}
+ <a class="btn btn-success" href="{{ route('Customer/registor_for_license') }}" role="button"> {{ __('New Customer') }}
 </a>
 </div>
 <div class="container">
