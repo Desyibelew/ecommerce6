@@ -12,7 +12,4 @@ class Clerk extends Model
      'user_name',
      'password',
     ];
-public function Categories(){
-    return $this ->belongsTo(Category::class);
-    }
 }
