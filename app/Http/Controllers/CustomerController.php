@@ -62,6 +62,9 @@ public function update_license($id)
   $Customer->zone =$request->zone;
   $Customer->woreda =$request->woreda;
   $Customer->kebele =$request->kebele;
+  $Customer->trade_type =$request->trade_type;
+  $Customer->trade_name =$request->trade_name;
+  $Customer->trade_code =$request->trade_code;
   $Customer->save();
   return redirect('Customer/get_license');
   }

@@ -24,6 +24,9 @@ return new class extends Migration
             $table->string('zone');
             $table->string('woreda');
             $table->string('kebele');
+            $table->string('trade_type');
+            $table->string('trade_name');
+            $table->string('trade_code');
             $table->timestamps();
         });
     }

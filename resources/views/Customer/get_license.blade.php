@@ -6,7 +6,7 @@
 </div>
 <div class="container">
  <div class="row justify-content-center">
- <div class="col-md-8">
+ <div class="col-md-16">
  <div class="card">
  <div class="card-header">
  {{ __('Dear Customer this is your license Paper') }}
@@ -31,7 +31,6 @@ Sex
    Nationality  
  </th>
  
-
  <th>
  kebele_ID
  </th>

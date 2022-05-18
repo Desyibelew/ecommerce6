@@ -95,11 +95,11 @@ Full_name" autofocus>
  </div>
  </div>
  <div class="form-group row">
- <label for="trade_type" class="col-md-4 col-formlabel text-md-right">{{ __('trade_type') }}</label>
+ <label for="woreda" class="col-md-4 col-formlabel text-md-right">{{ __('woreda') }}</label>
  <div class="col-md-6">
- <input id="trade_type" type="text" class="formcontrol @error('trade_type') isinvalid @enderror" name="trade_type" value="{{ old('trade_type') }}" required autocomplete
-="trade_type">
- @error('trade_type')
+ <input id="woreda" type="text" class="formcontrol @error('woreda') isinvalid @enderror" name="woreda" value="{{ old('woreda') }}" required autocomplete
+="woreda">
+ @error('woreda')
  <span class="invalid-feedback" role="alert">
  <strong>{{ $message }}</strong>
  </span>
