@@ -39,11 +39,3 @@ Route::post('/product/update',[ProductController::class,'update'])->name('produc
 Route::get('/product/delete/{id}', [ProductController::class, 'delete']);
 Route::get('/product/get_by_id/{id}', [ProductController::class, 'get_by_id']);
 
-//Route::get('/home', [App\Http\Controllers\HomeController ::class, 'index'])->name('home');
-Route::get('/Customer/registor_for_license',[CustomerController::class,'registor_for_license'])->name('Customer/registor_for_license');
-Route::post('Customer.registor_for_license',[CustomerController::class,'store'])->name('Customer/registor_for_license');
-Route::get('/Customer/get_license', [CustomerController::class, 'get_license'])->name('Customer/get_license');
-Route::get('/Customer/update_license/{id}', [CustomerController::class, 'update_license']);
-Route::post('/Customer/update_customer_license',[CustomerController::class,'update_customer_license'])->name('Customer/update_customer_license');
-Route::get('/Customer/cancel_customer_license/{id}', [CustomerController::class, 'cancel_customer_license']);
-Route::get('/Customer/get_by_id/{id}', [CustomerController::class, 'get_by_id']);
