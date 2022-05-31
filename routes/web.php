@@ -1,10 +1,9 @@
 <?php
 use App\Models\Category;
-use App\Models\Customer;
 use Illuminate\Support\Facades\Route;
 use App\Http\controllers\ProductController;
 use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\CustomerController;
+
 
 /*
 |--------------------------------------------------------------------------
